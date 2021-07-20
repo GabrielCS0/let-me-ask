@@ -1,7 +1,15 @@
+@mixin tablet {
+  @media (max-width: 790px) {
+    @content
+  }
+}
+
 #page-auth {
   display: flex;
   align-items: stretch;
   height: 100vh;
+
+  @include tablet { flex-direction: column; }
 
   aside {
     flex: 7;
@@ -15,12 +23,26 @@
 
     padding: 120px 80px;
 
-    img { max-width: 320px; }
+    @include tablet {
+      flex: 5;
+      padding: 40px 40px;
+    }
+
+    img {
+      max-width: 320px;
+
+      @include tablet { margin: 0 auto; }
+    }
 
     strong {
       font: 700 36px 'Poppins', sans-serif;
       line-height: 42px;
       margin-top: 16px;
+
+      @include tablet {
+        text-align: center;
+        line-height: 35px;
+      }
     }
 
     p {
@@ -28,6 +50,11 @@
       line-height: 32px;
       margin-top: 16px;
       color: #f8f8f8;
+
+      @include tablet {
+        text-align: center;
+        line-height: 25px;
+      }
     }
   }
 
@@ -40,6 +67,8 @@
     align-items: center;
     justify-content: center;
 
+    @include tablet { flex: 5; }
+
     .main-content {
       display: flex;
       flex-direction: column;
@@ -48,12 +77,20 @@
       align-items: stretch;
       text-align: center;
 
-      > img { align-self: center; }
+      @include tablet { margin-bottom: 25px; }
+
+      > img {
+        align-self: center;
+
+        @include tablet { margin-top: 40px; }
+      }
 
       h2 {
         font-size: 24px;
         margin: 64px 0 24px;
         font-family: 'Poppins', sans-serif;
+
+        @include tablet { margin: 25px 0 24px; }
       }
 
       .create-room {
@@ -74,6 +111,8 @@
         transition: filter .2s;
 
         &:hover { filter: brightness(0.9); }
+
+        @include tablet { margin-top: 32px; }
 
         img { margin-right: 8px; }
       }

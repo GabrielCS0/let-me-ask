@@ -1,6 +1,14 @@
+@mixin tablet {
+  @media (max-width: 660px) {
+    @content
+  }
+}
+
 div#page-room {
+  padding: 0 2%;
+
   header {
-    padding: 24px;
+    padding: 24px 2%;
     border-bottom: 1px solid #e2e2e2;
 
     .content {
@@ -10,11 +18,18 @@ div#page-room {
       justify-content: space-between;
       align-items: center;
 
-      > img { max-height: 45px; }
+      @include tablet { flex-direction: column; }
+
+      > img {
+        max-height: 45px;
+        @include tablet { margin-bottom: 15px; }
+      }
 
       > div {
         display: flex;
         gap: 16px;
+
+        @include tablet { flex-direction: column-reverse; }
 
         button { height: 40px; }
       }
@@ -24,6 +39,7 @@ div#page-room {
   main {
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 25px;
 
     .room-title {
       margin: 32px 0 24px;
