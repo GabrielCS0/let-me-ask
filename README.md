@@ -1,46 +1,57 @@
-# Getting Started with Create React App
+<p align="center">
+  <img alt="Letmeask" src="./src/assets/logo.svg" width="160px">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="GitHub License" src="https://img.shields.io/github/license/GabrielCordeiroDev/let-me-ask?color=4BB543">
 
-## Available Scripts
+  <img alt="Made by Gabriel" src="https://img.shields.io/badge/made%20by-GabrielCordeiro-%20?color=4BB543">
 
-In the project directory, you can run:
+  <img alt="Project top programing language" src="https://img.shields.io/github/languages/top/GabrielCordeiroDev/let-me-ask?color=4BB543">
+</p>
 
-### `yarn start`
+<h1 align="center">
+  <img alt="Letmeask" src="./src/assets/letmeask-home.png" />
+</h1>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🧪 Technologies
 
-### `yarn test`
+This project was developed using the following technologies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React](https://reactjs.org)
+- [Firebase](https://firebase.google.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Sass](https://sass-lang.com/)
 
-### `yarn build`
+## 🚀 How to execute
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+First, clone the project folder and access it.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+$ git clone https://github.com/GabrielCordeiroDev/let-me-ask
+$ cd let-me-ask
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run it, follow the steps below:
 
-### `yarn eject`
+```bash
+# Install all dependencies
+$ yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Run the project
+$ yarn start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You will need to create a [Firebase](https://firebase.google.com/) account and also a project to make a Realtime database available.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The app will be available in your browser at: http://localhost:3000
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 💻 Project
 
-## Learn More
+The Letmeask app was developed during NLW 06, an online event with the aim of taking you to the next level, thinking about content creators, the app allows you to create Q&A rooms with your audience, and all this in real time! 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📝 License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/GabrielCordeiroDev/let-me-ask/blob/main/LICENSE) file for details.
